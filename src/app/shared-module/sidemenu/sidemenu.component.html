@@ -1,0 +1,174 @@
+<ul style = "background-color:#f64740" class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a style = "background-color:#e52119" class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard">
+      <div style=" color: #ffffff;"> AFYA KAMILIFU </div>
+    </a>
+
+    <!-- Divider -->
+
+    <!-- Nav Item - Dashboard -->
+    <!-- <li class="nav-item">
+    <a href="#" class="active">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Dashboard</span></a>
+    </li> -->
+
+    <li class="nav-item">
+        <a class="nav-link" href="dashboard">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+      </li>
+
+    <!-- Divider -->
+    <hr style="border-top: 1px solid #f6f6f6; margin-right: 10%; margin-left: 8%;">
+    
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+      Data Entry
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+      <i class="fa fa-edit"></i>
+        <span>Data Entry Forms</span>
+      </a>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <a href="add-hotspot" class="collapse-item">
+            <i style = "color: red" class="fa fa-edit"></i> Hot-spot</a>
+         
+            <a href="add-kvp-client" class="collapse-item">
+            <i class="fa fa-edit"></i> KVP</a>
+           
+            <a href="add-indicator" class="collapse-item">
+            <i class="fa fa-edit"></i> Indicators</a>
+
+            <a href="add-target" class="collapse-item">
+            <i class="fa fa-edit"></i> Target Data</a>
+        </div>
+      </div>
+    </li>
+
+          <!-- Nav Item - Pages Collapse Menu -->
+          <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
+      <i class="fa fa-edit"></i>
+        <span>Raw Data</span>
+      </a>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          
+        <a href="#" class="collapse-item">
+          <i style = "color: red" class="fa fa-eye"></i> Hot-spot</a>
+          
+          <a href="#" class="collapse-item">
+            <i class="fa fa-eye"></i> KVP</a>
+
+            <a href="#" class="collapse-item">
+            <i class="fa fa-eye"></i>View Target</a>
+        </div>
+      </div>
+    </li>
+
+    <!-- Divider -->
+            <hr style="border-top: 1px solid #f6f6f6; margin-right: 10%; margin-left: 8%;">
+
+     <!-- Heading -->
+     <div class="sidebar-heading">
+      Reports
+    </div>
+
+     <!-- <li class="nav-item">
+       <a href="index.php?home=yes&<?php echo $url_attribute; ?>" class="<?php echo ( $_GET['home']=='yes' ? 'nav-link active' : 'nav-link' ) ?>">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>HIV Self Testing</span></a>
+    </li> -->
+
+         <!-- Nav Item - Utilities Collapse Menu -->
+         <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCscds" aria-expanded="true" aria-controls="collapseUtilities">
+      <i class="fa fa-list-alt"></i>
+        <span>KVP Reporting Cascade</span>
+      </a>
+      <div id="collapseCscds" class="collapse" aria-labelledby="collapseCscds" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <!-- <h6 class="collapse-header">Customer & Supplier:</h6> -->
+          <a href="index.php?kvp_cascadebyward=yes&<?php echo $url_attribute; ?>" class="collapse-item">
+            <i class="fa fa-eye"></i> Grouped by ward</a>
+
+            <a href="index.php?kvp_cascadebykvpgroup=yes&<?php echo $url_attribute; ?>" class="collapse-item">
+            <i class="fa fa-eye"></i>Grouped by KvpGroup</a>  
+        </div>
+      </div>
+    </li>
+
+    
+        <!-- Nav Item - Utilities Collapse Menu -->
+        <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCxx" aria-expanded="true" aria-controls="collapseUtilities">
+      <i class="fa fa-list-alt"></i>
+        <span>KVP DATIM reports</span>
+      </a>
+      <div id="collapseCxx" class="collapse" aria-labelledby="collapseCxx" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <!-- <h6 class="collapse-header">Customer & Supplier:</h6> -->
+          <a href="index.php?kp_prev_mob=yes&<?php echo $url_attribute; ?>" class="collapse-item">
+            <i class="fa fa-eye"></i> HTS KP,MOB Mod</a>
+
+            <a href="index.php?pp_prev=yes&<?php echo $url_attribute; ?>" class="collapse-item">
+            <i class="fa fa-eye"></i> PP_PrEV</a>  
+        </div>
+      </div>
+    </li>
+
+     <!-- Nav Item - Utilities Collapse Menu -->
+     <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMonitoring" aria-expanded="true" aria-controls="collapseUtilities">
+      <i class="fa fa-list-alt"></i>
+        <span>Monitoring Target Achievements</span>
+      </a>
+      <div id="collapseMonitoring" class="collapse" aria-labelledby="collapseMonitoring" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <!-- <h6 class="collapse-header">Customer & Supplier:</h6> -->
+          <!-- <a href="index.php?all_indicators=yes&<?php echo $url_attribute; ?>" class="collapse-item">
+            <i class="fa fa-eye"></i>All Indicators</a> -->
+
+            <a href="index.php?with_selected_indicator=yes&<?php echo $url_attribute; ?>" class="collapse-item">
+            <i class="fa fa-eye"></i>With Selected Indicator</a>  
+        </div>
+      </div>
+    </li>
+
+
+
+          
+    <hr style="border-top: 1px solid #f6f6f6; margin-right: 10%; margin-left: 8%;">
+
+     <!-- Nav Item - Pages Collapse Menu -->
+     <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#add_user" aria-expanded="true" aria-controls="collapsePages">
+      <i class="fa fa-list-alt"></i>
+        <span>Add Users</span>
+      </a>
+      <div id="add_user" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <!-- <h6 class="collapse-header">Branch Reports:</h6> -->
+          <a class="collapse-item" href="index.php?add_dataclerk=yes&<?php echo $url_attribute; ?>"><i class="fa fa-list text-blue"></i> Add Facility User</a>
+          <a class="collapse-item" href="index.php?add_datamanager=yes&<?php echo $url_attribute; ?>"><i class="fa fa-list text-danger"></i> Add Data Manager </a>
+         </div>
+      </div>
+    </li>
+  
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+      <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+  </ul>

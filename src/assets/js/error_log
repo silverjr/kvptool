@@ -1,0 +1,1 @@
+[12-Feb-2021 12:54:49 Africa/Nairobi] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/buyunica/public_html/fmis/admin/js/dbcon.php:12) in /home/buyunica/public_html/fmis/admin/js/mapato_matumizi_json.php on line 3
