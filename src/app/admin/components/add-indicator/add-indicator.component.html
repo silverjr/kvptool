@@ -41,7 +41,7 @@
                 
             <!-- Begin Page Content -->
             <div class="container-fluid">
-    <h1 class="h3 mb-2 text-gray-800">Admin | Add Client</h1>
+    <h1 class="h3 mb-2 text-gray-800">Admin | Add New Indicator</h1>
           <div class = "row" style = "background-color: #f0f1f2">
               <!-- Page Heading -->                
             
@@ -56,191 +56,34 @@
                               <div class="card shadow mb-4">
                                 <!-- Card Header - Accordion -->
                                 <a href="#" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                                  <h6 class="m-0 font-weight-bold text-primary">New Client</h6>
+                                  <h6 class="m-0 font-weight-bold text-primary">Indicator</h6>
                                 </a>
                                 <!-- Card Content - Collapse -->
                                 <div class="collapse show" id="collapseCardExample">
                             
                                 <div class="card-body">
-                                                               
+                              <form class="form" [formGroup]="addIndicatorForm" (ngSubmit)="submitForm">
                                 <div class="row">
-                                  <div class="col-md-4">
-                                    <select class="form-control" name="region" id="region">
-                                        <option value="">Region</option>
-                                    </select>
-                                </div><!-- /.form group -->
-    
-                                <div class="col-md-4">
-                                  <select class="form-control" name="district" id="district">
-                                      <option value="">District</option>
-                                  </select>
-                              </div><!-- /.form group -->
-    
-                              <div class="col-md-4">
-                                <select class="form-control" name="ward_shehia" id="ward_shehia">
-                                    <option value="">Ward/Shehia</option>
-                                </select>
-                            </div><!-- /.form group -->
-                                    
-                                </div> <!--row-->
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                          <input type="date" placeholder = "Date Reached" class="form-control pull-right" id="date_reached" name="date_reached" required />
-                                        </div><!-- /.form group -->
-    
                                         <div class="col-md-4">
-                                            <select name="" id="" class="form-control" required>
-                                                <option value="">Sex</option>
-                                                <option value="M">Male</option>
-                                                <option value="F">Female</option>
-                                            </select>                                        
-                                        </div><!-- /.form group -->
+                                         
+                                      </div><!-- /.form groups -->
 
+                                      <div class="col-md-4">
+                                        <input type="text" placeholder = "Indicator Name" class="form-control pull-right" id="indicator_value" name="indicator_value" required>
+                                      </div><!-- /.form group -->
+                                      
                                     <div class="col-md-4">
-                                        <input type="number" min="1" placeholder = "age" class="form-control pull-right" id="age" name="age" required>
+                                        
                                   </div><!-- /.form group -->
                                     
                                 </div> <!--row-->
-    
-    
-                                <div class="row">
-                                    <div class="col-md-4">
-                                      <select class="form-control" name="facility_for_register" id="facility_for_register">
-                                        <option value="">facility where Testing KVP register located</option>
-                                    </select>
-                                  </div><!-- /.form group -->
-    
-                                    <div class="col-md-4">
-                                          <input type="text" placeholder = "Client number" class="form-control pull-right" id="client_number" name="client_number" required>
-                                    </div><!-- /.form group -->
-    
-                                    <div class="col-md-4">
-                                      <select class="form-control" name="eligible" id="eligible">
-                                        <option value="">Eligible</option>
-                                        <option value="Y">Yes</option>
-                                        <option value="N">No</option>
-                                    </select>     
-                                        </div><!-- /.form group -->
-                                    
-                                </div> <!--row-->
-
-                                <div class="row">
-                                  <div class="col-md-4">
-                                    <select class="form-control" name="kvp_group" id="">
-                                        <option value="">KVP Group</option>
-                                    </select>
-                                </div><!-- /.form groups -->
-    
-                                <div class="col-md-4">
-                                  <select class="form-control" name="testing_modality" id="">
-                                      <option value="">Testing Modality</option>
-                                  </select>
-                              </div><!-- /.form groups -->
-    
-                              <div class="col-md-4">
-                                <select class="form-control" name="testing_status" id="">
-                                    <option value="">Testing Status</option>
-                                  </select>
-                            </div><!-- /.form groups -->
-                                    
-                                </div> <!--row-->
-
-                                <div class="row">
-                                  <div class="col-md-4">
-                                    <select class="form-control" name="result" id="result">
-                                        <option value="">Result</option>
-                                    </select>
-                                </div><!-- /.form group -->     
-
-                                  <div class="col-md-4">
-                                        <select class="form-control" name="started_arv" id="started_arv">
-                                            <option value="">Started ARV</option>
-                                            <option value="Y">Yes</option>
-                                            <option value="N">No</option>
-                                        </select>   
-                                   </div>
-
-                                   <div class="col-md-4">
-                                    <select class="form-control" name="hot_spot" id="hot_spot">
-                                        <option value="">Hot-Spot</option>
-                                    </select>   
-                               </div>
-
-                              </div>
-
-                              <div class="row">
-                                <div class="col-md-4">
-                                    <select class="form-control" name="linked_facility" id="linked_facility">
-                                        <option value="">Facility Linked</option>
-                                    </select>   
-                               </div>
-
-                                <div class="col-md-4">
-                                    <select class="form-control" name="linked_ctc" id="">
-                                        <option value="">Linked to CTC ?</option>
-                                        <option value="Y">Yes</option>
-                                        <option value="N">No</option>
-                                    </select>   
-                               </div>
-
-                               <div class="col-md-4">
-                                <input type="text" placeholder = "CTC number" class="form-control pull-right" id="ctc_number" name="ctc_number" required>
-                               </div>
-                              </div>
-
-                              <div class="row">
-
-                                <div class="col-md-4">
-                                    <select class="form-control" name="KVP_screening" id="KVP_screening">
-                                        <option value="">KVP Screening </option>
-                                    </select>   
-                               </div>
-
-                                <div class="col-md-4">
-                                    <select class="form-control" name="linked_ctc" id="">
-                                        <option value="">Condom Distributed ?</option>
-                                        <option value="Y">Yes</option>
-                                        <option value="N">No</option>
-                                    </select>   
-                               </div>
-
-                               <div class="col-md-4">
-                                    <select class="form-control" name="linked_ctc" id="">
-                                        <option value="">REFERRED_STI_TB_GENDER DESK</option>
-                                        <option value="Y">Yes</option>
-                                        <option value="N">No</option>
-                                    </select>                    
-                                </div>
-                              </div>
-
-                              <div class="row">
-
-                                <div class="col-md-4">
-                                    <select class="form-control" name="KVP_screening" id="KVP_screening">
-                                        <option value="">HF Implemented CBHS Events </option>
-                                    </select>   
-                               </div>
-
-                                <div class="col-md-4">
-                                    <select class="form-control" name="linked_ctc" id="">
-                                        <option value="">Reached With PrEV Package</option>
-                                        <option value="Y">Yes</option>
-                                        <option value="N">No</option>
-                                    </select>   
-                               </div>
-
-                               <div class="col-md-4">
-                                    <textarea class="form-control" placeholder="Comments..."></textarea>                  
-                                </div>
-                              </div>
     
                                 <div class="row">
                                     <div class="col-md-12">
                                        <button style="width: 100%; background-color: #e52119; border: solid #e52119;" class="btn btn-primary">SUBMIT DATA</button>
                                     </div>
                                 </div>
-    
+                              </form>
                             </div>
                             <!--card body ends here-->
                              </div>
