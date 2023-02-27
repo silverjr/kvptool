@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-add-indicator',
@@ -9,7 +10,13 @@ export class AddIndicatorComponent implements OnInit {
 
   year:any = new Date();
 
-  constructor() { }
+  addIndicatorForm = this.fb.group({
+    ndicatorName:''
+  })
+
+  constructor(private fb:FormBuilder) { }
+
+
 
   ngOnInit(): void {
   }

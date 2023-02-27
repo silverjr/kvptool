@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { DashboarModuleModule } from './dashboar-module/dashboar-module.module';
 import { AdminModule } from './admin/admin.module';
 import { DataEntryModuleModule } from './data-entry-module/data-entry-module.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { DataEntryModuleModule } from './data-entry-module/data-entry-module.mod
     AppRoutingModule,
     AdminModule,
     DataEntryModuleModule,
-    DashboarModuleModule
+    DashboarModuleModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
